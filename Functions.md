@@ -35,8 +35,12 @@ function ourFunction() {
 }
 ```
 
-You might have noticed the similarities with both ways but to explain them in more details, the word `function`
-is a reserved keyword that indicates the intent to define a function, the parentheses `()` contain the parameters that we will use in our function, and finally the curly brackets `{}` contains the executable code if any is present in the function when it comes to invoking the function both of the ways can be invoked in the same way which is by adding parentheses in front of the function name `ourFunction()`.
+You might have noticed the similarities with both ways but to explain them in more details:
+`function`: is a reserved keyword that indicates the intent to define a function.
+`parentheses ()`: contain the parameters that we will use in our function.
+`curly brackets {}`: contains the executable code if any is present in the function.
+
+when it comes to invoking the function both of the ways can be invoked in the same way which is by adding parentheses in front of the function name `ourFunction()`.
 
 ### Parameters And Arguments
 
