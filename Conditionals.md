@@ -350,6 +350,9 @@ HINT: read about how to use `typeof` on MDN
    // paper beats rock
    // scissors beats paper
    const rockPaperScissors = function (move) {
+     // use randomMove to get the value of the random move
+     const randomMove = random()
+     // randomMove; => rock (use it by referencing the name)
      // TODO: Your code here
    };
 
