@@ -186,7 +186,7 @@ getGrade(90); // => A
 getGrade(51); // => D
 ```
 
-### PrDctice
+### Practice
 
 1. Figure out the syntax errors in following, and fix them.
 
@@ -246,19 +246,25 @@ getGrade(51); // => D
    // Write a function `login` that accepts two string arguments `username` and `password` and
    // returns a string "login successful" if both are valid or return "Invalid login information" with the appropriate reason,
    // the function will check the following:
-   // 1- if the username is of the specified usernames
-   // 2- if the length of the username is greater than 4
-   // 3- if the password length is greater than 8
+   // 1- if the length of the username is greater than 4
+   // 2- if the username is of the specified usernames below
+   // 3- if the password length is greater or equal to 8
    // 4- if the password is equal to the corresponding password
+   // 5- the usernames don't need to be case sensitive but passwords do
 
-   // (username => "MrPotato", password =>"LonelyPotato"),  (username => "theWiseMan", password => "123456")
+   // (username => "MrPotato", password =>"LonelyPotato"),  (username => "theWiseMan", password => "12345678")
    const login = function (username, password) {
-     // keep in mind that usernames don't need to be case sensitive but passwords do
      // TODO: Your code here
    };
 
    login("MrPotato", "LonelyPotato"); // => login successful
-   login("MrPotato", "123456"); // => Invalid login information
+   login("mrpotato", "LonelyPotato"); // => login successful
+
+   login("MrPotato", "lonelypotato"); // => Invalid login information, wrong password or username
+   login("MrPotato", "12345678"); // => Invalid login information, wrong password or username
+
+   login("MrPotato", "123456"); // => Invalid login information, the password length must be greater or equal to 8
+   login("mike", "12345678"); // => Invalid login information, the username length must be greater than 4
    ```
 
 4. Write a function `isLeapYear` that accepts a number argument `year` and returns true if the year is a leap year, leap years are divisible by 4 but non leap years are not divisible by 100 for the exception of 400 (leap years are also divisible by 400)
