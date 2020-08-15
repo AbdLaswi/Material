@@ -43,10 +43,10 @@ a; // => 20
 b; // => 10
 
 // if you do not assign a value to the variable it will be given a value of undefined
-const ourVariable;
 let anotherVariable;
-
 anotherVariable; // => undefined
+
+const ourVariable; //Uncaught SyntaxError: Missing initializer in const declaration
 
 // using the keyword var was the old way of defining variables, you can still see it being used but it is better to work with
 // let and const instead.
