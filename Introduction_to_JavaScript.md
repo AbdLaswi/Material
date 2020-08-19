@@ -1,4 +1,4 @@
-# Inroduction To JavaScript
+# Introduction To JavaScript
 
 ## High Level Goals
 
@@ -40,7 +40,7 @@ Let's take a look on some of the value types in JavaScript.
 "Hello " + "World"; // => "Hello World"
 
 // 2- Numbers
-120, 300, -56, 0;
+120, 300, -56, 0, 1.3, 0.8;
 
 // to perform mathematical operations in JS combine numbers and operators (+, -, *, /, %) in an expression,
 // also in JS these operations will follow the Mathematical order of operations (PEMDAS)
@@ -60,12 +60,12 @@ true || false; // => true
 
 ### Mixing Types
 
-Since JavaScript isn't a strictly-typed langauge it is possible to mix different values of different types together.
+Since JavaScript isn't a strictly-typed language it is possible to mix different values of different types together.
 
 Try the following:
 
 ```js
-// an example of concatinating a string with a number
+// an example of concatenating a string with a number
 "I am " + 10 + " years old"; // => I am 10 years old
 
 // in other strictly-typed languages it is not possible to add integers and float numbers together
@@ -75,7 +75,7 @@ Try the following:
 true + 3 + true; // => 5
 ```
 
-Mixing types makes the langauge a little bit begginer friendly since not many errors will be thrown when trying to mix types which is a mistake done by begginers specially when it come to numbers.
+Mixing types makes the language a little bit beginner friendly since not many errors will be thrown when trying to mix types which is a mistake done by beginners specially when it come to numbers.
 
 ### Writing A Program
 
@@ -113,7 +113,7 @@ Open the console and solve the following questions
     36 ÷ 9 + 48 - 10 ÷ 2;  // ?
     ```
 
-2. Write an expression that represents the average grade of an exam, knowing that in a class of ten students, five of them got 24/30, 2 of them got 16/30 and the remaning ones got 29/30
+2. Write an expression that represents the average grade of an exam, knowing that in a class of ten students, five of them got 24/30, two of them got 16/30 and the remaning ones got 29/30
 
 3. Write an expression that represents the number of seconds in 30 days.
 

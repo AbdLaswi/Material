@@ -119,7 +119,7 @@ if (false) {
   // run this block of code, because it was the first condition to succeed
 } else if (true) {
   // even though this is also true it will not run since after executing the previous block of code it will stop checking
-  // the other statements which result in this one being ignored
+  // the other statements, which results in this one being ignored
 } else {
   // since one of the previous conditions is true, this block of code will be ignored
 }
@@ -250,10 +250,10 @@ getGrade(51); // => D
    // 2- if the username is of the specified usernames below
    // 3- if the password length is greater or equal to 8
    // 4- if the password is equal to the corresponding password
-   // 5- the usernames don't need to be case sensitive but passwords do
 
    // (username => "MrPotato", password =>"LonelyPotato"),  (username => "theWiseMan", password => "12345678")
    const login = function (username, password) {
+     // keep in mind that usernames don't need to be case sensitive but passwords do
      // TODO: Your code here
    };
 

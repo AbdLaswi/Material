@@ -135,6 +135,60 @@ updateName("Jane"); // => "Jane"
 name; // => "Jane"
 ```
 
+### Pulse Check
+
+1. Write the difference between const and let.
+
+2. define a variable `PhoneNumber` containing your phone number.
+
+3. Define the following variables.
+
+   ```js
+   // 1- define a variable `color` containing your favorite  color
+
+   // 2- define a variable `positiveNumber`containing any positive number
+
+   // 3- define a variable `isLoggedIn` containing a boolean value
+
+   // 4- define a variable `PhoneNumber` containing your phone number
+   ```
+
+4. Reassign the value of the following variables.
+
+   ```js
+   // 1- reassign the value to `Toyota`
+   let myCar = "Nissan";
+
+   // 2- reassign the value to a negative number
+   let negativeNumber = 102;
+
+   // 3- reassign the value to your name
+   let name;
+
+   // 4- reassign  the value of `a` to make the following expression equal to nine
+   let a;
+   let b = 3;
+   let c = 10;
+
+   c - b * c + a;
+   ```
+
+5. Create the following expressions.
+
+```js
+// 1- create an expression to calculate the average grade for a class by using the following variables
+const totalClassGrades = 877;
+const numberOfStudents = 10;
+
+// 2- create an expression that represents a full name by using the following variables
+const firstName = "John";
+const lastName = "Doe";
+
+// 3- create an expression to calculate your age in seconds using the following variables
+const daysInYear = 365;
+const HoursPerDay = 24;
+```
+
 ### Practice
 
 1. Figure out the syntax errors in the following variable declarations, and fix them.
@@ -205,21 +259,21 @@ name; // => "Jane"
 
 5. Write two functions `deposit` and `withdraw` that accepts a number argument `amount` and returns the current account balance
 
-    ```js
-    const deposit = function (amount) {
-      // TODO: Your code here
-    };
+   ```js
+   const deposit = function (amount) {
+     // TODO: Your code here
+   };
 
-    const withdraw = function (amount) {
-      // TODO: Your code here
-    };
+   const withdraw = function (amount) {
+     // TODO: Your code here
+   };
 
-    deposit(100); // => 100
-    deposit(50); // => 150
-    withdraw(70); // => 80
-    deposit(50); // => 130
-    withdraw(100); // => 30
-    ```
+   deposit(100); // => 100
+   deposit(50); // => 150
+   withdraw(70); // => 80
+   deposit(50); // => 130
+   withdraw(100); // => 30
+   ```
 
 ### Extra Practice
 
@@ -241,31 +295,31 @@ name; // => "Jane"
 
 2. Predict the correct value of the variables.
 
-    ```js
-    const a = 10;
-    let b = 1
-    const functionOne = function () {
-      b = 20;
-      let c = 5
-      const functionTwo = function () {
-        let d = 5
-        c = 8
-        b = a + b + c + d
-      };
-      functionTwo()
-    };
-    const functionThree = function () {
-      a = 20
-    }
+   ```js
+   const a = 10;
+   let b = 1
+   const functionOne = function () {
+     b = 20;
+     let c = 5
+     const functionTwo = function () {
+       let d = 5
+       c = 8
+       b = a + b + c + d
+     };
+     functionTwo()
+   };
+   const functionThree = function () {
+     a = 20
+   }
 
-    functionOne();
-    functionThree();
+   functionOne();
+   functionThree();
 
-    a; // ?
-    b; // ?
-    c; // ?
-    d: // ?
-    ```
+   a; // ?
+   b; // ?
+   c; // ?
+   d: // ?
+   ```
 
 3. Modify the `rockPaperScissors` function from the previous lesson to save the score of how many times the user has won and how many the user has lost and return the score with every invocation.
 
