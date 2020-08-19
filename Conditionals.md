@@ -267,7 +267,7 @@ getGrade(51); // => D
    login("mike", "12345678"); // => Invalid login information, the username length must be greater than 4
    ```
 
-4. Write a function `isLeapYear` that accepts a number argument `year` and returns true if the year is a leap year, leap years are divisible by 4 but non leap years are not divisible by 100 for the exception of 400 (leap years are also divisible by 400)
+4. Write a function `isLeapYear` that accepts a number argument `year` and returns true if the year is a leap year, leap years are divisible by 4 but non leap years are divisible by 100 for the exception of 400 (leap years are also divisible by 400)
 
    ```js
    const isLeapYear = function (year) {
