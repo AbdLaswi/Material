@@ -139,9 +139,7 @@ name; // => "Jane"
 
 1. Write the difference between const and let.
 
-2. define a variable `PhoneNumber` containing your phone number.
-
-3. Define the following variables.
+2. Define the following variables.
 
    ```js
    // 1- define a variable `color` containing your favorite  color
@@ -153,7 +151,7 @@ name; // => "Jane"
    // 4- define a variable `PhoneNumber` containing your phone number
    ```
 
-4. Reassign the value of the following variables.
+3. Reassign the value of the following variables.
 
    ```js
    // 1- reassign the value to `Toyota`
@@ -173,21 +171,23 @@ name; // => "Jane"
    c - b * c + a;
    ```
 
-5. Create the following expressions.
+4. Create the following expressions.
 
-```js
-// 1- create an expression to calculate the average grade for a class by using the following variables
-const totalClassGrades = 877;
-const numberOfStudents = 10;
+   ```js
+   // 1- create an expression to calculate the average grade for a class by using the following variables
+   const totalClassGrades = 877;
+   const numberOfStudents = 10;
 
-// 2- create an expression that represents a full name by using the following variables
-const firstName = "John";
-const lastName = "Doe";
+   // 2- create an expression that represents a full name by using the following variables
+   const firstName = "John";
+   const lastName = "Doe";
 
-// 3- create an expression to calculate your age in seconds using the following variables
-const daysInYear = 365;
-const HoursPerDay = 24;
-```
+   // 3- create an expression to calculate your age in seconds using the following variables
+   const daysInYear = 365;
+   const HoursPerDay = 24;
+   ```
+
+````
 
 ### Practice
 
@@ -199,7 +199,7 @@ const HoursPerDay = 24;
    let const = "Constant";
    let variable 1 = true;
    let true = true
-   ```
+````
 
 2. Explain how the following variable declarations work.
 
@@ -280,8 +280,8 @@ const HoursPerDay = 24;
 1. Write a function `minMax` that accepts a number argument `number` and returns a string representing the maximum number and the minimum number, read the comments for more information.
 
    ```js
-   // every time the function it is called it must check if the passed argument is the maximum number or minimum or both and preserve
-   // the result for later invocations
+   // every time the function it is called it must check if the passed argument is the maximum number or minimum or
+   // both and preserve the result for later invocations
    const minMax = function (number) {
      // TODO: Your code here
    };
