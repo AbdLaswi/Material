@@ -187,8 +187,6 @@ name; // => "Jane"
    const HoursPerDay = 24;
    ```
 
-````
-
 ### Practice
 
 1. Figure out the syntax errors in the following variable declarations, and fix them.
@@ -199,7 +197,7 @@ name; // => "Jane"
    let const = "Constant";
    let variable 1 = true;
    let true = true
-````
+   ```
 
 2. Explain how the following variable declarations work.
 
@@ -279,19 +277,21 @@ name; // => "Jane"
 
 1. Write a function `minMax` that accepts a number argument `number` and returns a string representing the maximum number and the minimum number, read the comments for more information.
 
-   ```js
-   // every time the function it is called it must check if the passed argument is the maximum number or minimum or
-   // both and preserve the result for later invocations
-   const minMax = function (number) {
-     // TODO: Your code here
-   };
+    ```js
+    // every time the function it is called it must check if the passed argument is the maximum number or minimum or
+    // both and preserve the result for later invocations
+    const minMax = function (number) {
+      // TODO: Your code here
+    };
 
-   minMax(5); // => the maximum number is: 5 and the minimum number is 5
-   minMax(2); // => the maximum number is: 5 and the minimum number is 2
-   minMax(3); // => the maximum number is: 5 and the minimum number is 2
-   minMax(7); // => the maximum number is: 7 and the minimum number is 2
-   minMax(0); // => the maximum number is: 7 and the minimum number is 0
-   ```
+    minMax(5); // => the maximum number is: 5 and the minimum number is 5
+    minMax(2); // => the maximum number is: 5 and the minimum number is 2
+    minMax(3); // => the maximum number is: 5 and the minimum number is 2
+    minMax(7); // => the maximum number is: 7 and the minimum number is 2
+    minMax(0); // => the maximum number is: 7 and the minimum number is 0
+    ```
+  
+    HINT search for NEGATIVE_INFINITY and POSITIVE_INFINITY on [MDN](https://developer.mozilla.org/en-US/)
 
 2. Predict the correct value of the variables.
 
