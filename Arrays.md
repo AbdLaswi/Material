@@ -18,13 +18,13 @@ An array is an ordered collection of related values, there are no restrictions o
 Examples on defining an array:
 
 ```js
-let array = []; // => empty array
+const array = []; // => empty array
 
 // in between the square brackets `[]` add comma-separated values
 // the values of an array could be of any data type
-let fruits = ["Apple", "Banana", "Strawberry", "Mango"];
-let oddNumbers = [1, 5, 7, 3, 11];
-let someArrayValues = [
+const fruits = ["Apple", "Banana", "Strawberry", "Mango"];
+const oddNumbers = [1, 5, 7, 3, 11];
+const someArrayValues = [
   100,
   "Hello",
   true,
@@ -35,9 +35,9 @@ let someArrayValues = [
 ];
 
 // it is possible to use other variables inside the array
-let nameOne = "John";
-let nameTwo = "Doe";
-let names = [nameOne, nameTwo];
+const nameOne = "John";
+const nameTwo = "Doe";
+const names = [nameOne, nameTwo];
 
 names; // => ["John", "Doe"]
 
@@ -54,7 +54,7 @@ Here is an example:
 
 ```js
 // the array indexes start at 0 so the first item in the array will always have the index of 0
-let numbers = [40, 30, 90, 45];
+const numbers = [40, 30, 90, 45];
 
 // to access a value  we need to reference the array and then add the index number in between square brackets
 numbers[0]; // => 40
@@ -69,7 +69,7 @@ numbers.length; // => 4
 numbers[numbers.length - 1]; // => 45
 
 // accessing nested arrays
-let nestedArrays = [
+const nestedArrays = [
   [1, 2, 3],
   [4, 5, 6],
 ];
@@ -79,7 +79,7 @@ nestedArrays[0][1]; // => 2
 nestedArrays[1][0] === 4; // => true
 
 // now since we can access a specific location in the array, we can use the assignment operator to update or add values
-let nums = [5, 2, 3];
+const nums = [5, 2, 3];
 
 nums[0] = 1;
 nums; // => [1, 2, 3]
@@ -140,9 +140,8 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
    // 2- access the `Koala` value of the following arrays using the `length` property
    const animals = ["Cat", "Dog", "Dolphin", "Squirrel", "Koala"];
-   const mammals = ["Koala", "Bear", "Panda", "Sheep", "Tiger"];
 
-   //  3- access the value middle value of the following array using the `length` property
+   //  3- access the value middle value of the following array using the `length` property or the index
    const cars = ["Ford", "BMW", "Ferrari", "Mercedes", "Subaru"];
    ```
 
@@ -153,17 +152,18 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
    // a- use the `length` property
    const orderedPlanets = ["Mercery", "Venus", "Earth", "Jupiter"];
-   // b- don't use the `length` property
+   // b- don't use the `length` property (use the index)
    const unorderedPlanets = ["Mars", "Earth", "Mercery"];
 
-   // 2- Assign the `Koala` to the start of the following arrays (replace `Cat` and `Bear`)
-
-   // a- use the `length` property
+   // 2- Assign the `Koala` to the start of the following array (replace `Cat`)
+   // use the `length` property
    const animals = ["Cat", "Dog", "Dolphin", "Squirrel"];
-   // b- don't use the `length` property
+
+   // 3- Assign the `Koala` to the start of the following array (replace `Bear`)
+   // don't use the `length` property
    const mammals = ["Bear", "Panda", "Sheep", "Tiger"];
 
-   //  3- Assign the value `Toyota` to the middle of the following array using the `length` property(replace `Ferrari`)
+   //  4- Assign the value `Toyota` to the middle of the following array using the `length` property(replace `Ferrari`)
    const cars = ["Ford", "BMW", "Ferrari", "Mercedes", "Subaru"];
    ```
 
@@ -188,21 +188,21 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    ```js
    // split: is used to convert a string into an array and the values will be separated depending on the
    // argument passed into the split method
-   let word = "Hello";
-   // if an empty string is passed as an argument then the string will be split on every letter
+   const word = "Hello";
+   // if an empty string is passed as an argument then the string will be split on every constter
    word.split(""); // => ["H", "e", "l", "l", "o"]
    // if a string contains empty space then the string will be split on every empty space
-   let words = "This is a string that contains words";
+   const words = "This is a string that contains words";
    words.split(" "); // => ["This", "is", "a", "string", "that", "contains", "words"]
 
    // join: is used to converting an array into a string and the values will be separated depending on the
    // argument passed into the join method
-   let names = ["John", "Doe"];
-   let fullName = names.join("-");
+   const names = ["John", "Doe"];
+   const fullName = names.join("-");
    fullName; // => "John-Doe"
 
    // reverse: is used to reverse the order of the array
-   let numbers - [1, 2, 3, 4];
+   const numbers - [1, 2, 3, 4];
    numbers.reverse(); // => [4, 3, 2, 1]
 
    // write a function `reverseWords` that accepts a string argument and returns the same string if only
@@ -283,7 +283,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
 ### Extra Practice
 
-1. Write a function `sum` that returns the sum of all arguments passed to the function, the arguments are in an ascending order and each new argument is an increment of one, and most importantly make sure not to use parameters.
+<!-- 1. Write a function `sum` that returns the sum of all arguments passed to the function, the arguments are in an ascending order and each new argument is an increment of one, and most importantly make sure not to use parameters.
 
    ```js
    const sum = function () {
@@ -297,9 +297,9 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    sum(); // => 0
    ```
 
-   HINT: read about `arguments`.
+   HINT: read about `arguments`. -->
 
-2. Write a function `isPalindrome` that accepts a string argument and returns whether the string is a palindrome or not.
+1. Write a function `isPalindrome` that accepts a string argument and returns whether the string is a palindrome or not.
 
    ```js
    // a palindrome is when a string is read the same backwards
@@ -315,7 +315,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
    HINT: using `join` and `split` try to git rid of the white spaces in the string
 
-3. Write a function `randomFruit` that accepts an array of fruits and returns a random element from that array.
+2. Write a function `randomFruit` that accepts an array of fruits and returns a random element from that array.
 
    ```js
     const randomFruit = function (array) {
@@ -332,7 +332,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
    HINT: search for `Math.random` on [MDN](https://developer.mozilla.org/en-US/)
 
-4. Write a function `convertToString` that accepts an array of strings and returns a string made out of the array values.
+3. Write a function `convertToString` that accepts an array of strings and returns a string made out of the array values.
 
    ```js
    const convertToString = function (array) {
@@ -343,7 +343,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    convertToString(["Hello", "John", "i", "am", "Jane"]); // => Hello John i am Jane
    ```
 
-5. Write a function `search` that accepts an array of strings and a string then returns whether the string is inside of the array or not.
+4. Write a function `search` that accepts an array of strings and a string then returns whether the string is inside of the array or not.
 
    ```js
    const search = function (array, string) {
