@@ -18,19 +18,20 @@ An object is an unordered collection that consists of paired keys and values, th
 Examples on defining an object:
 
 ```js
-let object = {}; // => empty object
+const object = {}; // => empty object
 
 // in between the curly brackets `{}` add comma-separated paired key and value
 // {name: "John Doe"} in the previous object the key (name) and the value (John Doe) are
 // separated by a colon `:`
-let name = { first: "John", last: "Doe" };
+const name = { first: "John", last: "Doe" };
 
-let numbers = { odd: [1, 3, 5], even: [2, 4, 6] };
+const numbers = { odd: [1, 3, 5], even: [2, 4, 6] };
 
-let someObjectValues = {
+const someObjectValues = {
   number: 100,
   string: "Hello World",
   array: [1, 2],
+  boolean: true
   object: { a: 1 },
   square: function (number) {
     return number * number;
@@ -38,10 +39,10 @@ let someObjectValues = {
 };
 
 // it is possible to use other variables inside the object
-let firstName = "John";
-let LastName = "Doe";
+const firstName = "John";
+const lastName = "Doe";
 
-let fullName = { first: firstName, last: LastName };
+const fullName = { first: firstName, last: lastName };
 ```
 
 ### Accessing and Assigning values
@@ -51,7 +52,7 @@ In order to access a value in the object, we need to reference the object and it
 Here is an example
 
 ```js
-let name = { first: "John", last: "Doe" };
+const name = { first: "John", last: "Doe" };
 
 // this is how dot notation looks like
 name.first; // => "John"
@@ -62,13 +63,13 @@ name["first"]; // => "John"
 name["last"]; // => "Doe"
 
 // bracket notation can be used with variables while dot notation can't be used with variables
-let keyName = "first";
+const keyName = "first";
 
 name[keyName]; // => "John"
 name.keyName; // => undefined
 
 // accessing nested objects
-let nestedObjects = { name: { first: "John", last: "Doe" } };
+const nestedObjects = { name: { first: "John", last: "Doe" } };
 nestedObjects.name.first; // => "John"
 nestedObjects.name.last; // => "Doe"
 
@@ -129,7 +130,7 @@ people.push(person2, person3);
 2. Access the following values.
 
    ```js
-   // 1- access the value `Mars` of the following objects:
+   // 1- access the value of the key `Mars` in the following objects:
 
    // a- using dot notation
    const orderedSolarSystem = {
@@ -146,7 +147,7 @@ people.push(person2, person3);
      Venus: "second",
    };
 
-   // 2- access the `koala` value of the following object:
+   // 2- access the value of key `koala` in the following object:
    const animalDiet = {
      mammals: {
        cat: "carnivore",
@@ -166,16 +167,16 @@ people.push(person2, person3);
    // - change the english grade to an 90 using dot notation
    // - add an attribute average with the score of all three grades using dot notation
    const studentOne = {
-     englishGrade: "80",
-     scienceGrade: "90",
+     englishGrade: 80,
+     scienceGrade: 90,
    };
 
    // - add the math grade (80) to the student using bracket notation
    // - change the english grade to an 90 using bracket notation
    // - add an attribute average with the score of all three grades using bracket notation
    const studentTwo = {
-     englishGrade: "80",
-     scienceGrade: "90",
+     englishGrade: 80,
+     scienceGrade: 90,
    };
 
    // assign the following variables as a key-value pair to the object, make sure to
