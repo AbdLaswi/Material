@@ -141,7 +141,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    // 2- access the `Koala` value of the following arrays using the `length` property
    const animals = ["Cat", "Dog", "Dolphin", "Squirrel", "Koala"];
 
-   //  3- access the value middle value of the following array using the `length` property or the index
+   //  3- access the  middle value of the following array using the `length` property or the index
    const cars = ["Ford", "BMW", "Ferrari", "Mercedes", "Subaru"];
    ```
 
@@ -156,14 +156,10 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    const unorderedPlanets = ["Mars", "Earth", "Mercery"];
 
    // 2- Assign the `Koala` to the start of the following array (replace `Cat`)
-   // use the `length` property
+   // use the index
    const animals = ["Cat", "Dog", "Dolphin", "Squirrel"];
 
-   // 3- Assign the `Koala` to the start of the following array (replace `Bear`)
-   // don't use the `length` property
-   const mammals = ["Bear", "Panda", "Sheep", "Tiger"];
-
-   //  4- Assign the value `Toyota` to the middle of the following array using the `length` property(replace `Ferrari`)
+   //  3- Assign the value `Toyota` to the middle of the following array using the `length` property(replace `Ferrari`)
    const cars = ["Ford", "BMW", "Ferrari", "Mercedes", "Subaru"];
    ```
 
