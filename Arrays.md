@@ -31,7 +31,7 @@ const someArrayValues = [
   [1, 2, 3, 4],
   function () {
     console.log("Hello");
-  },
+  }
 ];
 
 // it is possible to use other variables inside the array
@@ -71,7 +71,7 @@ numbers[numbers.length - 1]; // => 45
 // accessing nested arrays
 const nestedArrays = [
   [1, 2, 3],
-  [4, 5, 6],
+  [4, 5, 6]
 ];
 
 nestedArrays[0]; // => [1,2,3]
