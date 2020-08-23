@@ -199,7 +199,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    fullName; // => "John-Doe"
 
    // reverse: is used to reverse the order of the array
-   const numbers - [1, 2, 3, 4];
+   const numbers = [1, 2, 3, 4];
    numbers.reverse(); // => [4, 3, 2, 1]
 
    // write a function `reverseWords` that accepts a string argument and returns the same string if only
