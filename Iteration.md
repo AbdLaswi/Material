@@ -284,11 +284,27 @@ while (index < 9) {
 
 5. Write a function `deleteKeys` that accepts an array and an object and returns the same object after removing all key-value pairs depending on the values in the array, the array will contain the key names that must be removed from the object.
 
-```js
-const deleteKeys = function (array, object) {
-  // TODO: Your code here
-};
+   ```js
+   const deleteKeys = function (array, object) {
+     // TODO: Your code here
+   };
 
-deleteKeys(["one", "two"], { one: "one", two: "two", three: "three" }); // => { one: "one", two: "two", three: "three" }
-deleteKeys(["four", "five", "one"], { 0: "one", 1: "two", 2: "three" }); // => { two: "two", three: "three" }
-```
+   deleteKeys(["one", "two"], { one: "one", two: "two", three: "three" }); // => { one: "one", two: "two", three: "three" }
+   deleteKeys(["four", "five", "one"], { 0: "one", 1: "two", 2: "three" }); // => { two: "two", three: "three" }
+   ```
+
+6. Write a function `sum` that returns the sum of all arguments passed to the function, make sure not to use parameters.
+
+   ```js
+   const sum = function () {
+     // TODO: Your code here
+   };
+
+   sum(1, 2); // => 3
+   sum(1, 2, 3, 4); // => 10
+   sum(4, 5, 6, 7, 8); // => 30
+   sum(1); // => 1
+   sum(); // => 0
+   ```
+
+   HINT: read about `arguments`.

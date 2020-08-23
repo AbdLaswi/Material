@@ -227,7 +227,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    };
 
    addToLast([1, 2, 3], 4); // => [1, 2, 3, 4]
-   addToLast([10, 6], 1); // => [10, 26, 1]
+   addToLast([10, 6], 1); // => [10, 6, 1]
    ```
 
 3. Solve the following
@@ -282,22 +282,6 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    ```
 
 ### Extra Practice
-
-<!-- 1. Write a function `sum` that returns the sum of all arguments passed to the function, the arguments are in an ascending order and each new argument is an increment of one, and most importantly make sure not to use parameters.
-
-   ```js
-   const sum = function () {
-     // TODO: Your code here
-   };
-
-   sum(1, 2); // => 3
-   sum(1, 2, 3, 4); // => 10
-   sum(4, 5, 6, 7, 8); // => 30
-   sum(1); // => 1
-   sum(); // => 0
-   ```
-
-   HINT: read about `arguments`. -->
 
 1. Write a function `isPalindrome` that accepts a string argument and returns whether the string is a palindrome or not.
 
@@ -356,3 +340,4 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    search(fruits, "banana"); // => true
    search(fruits, "John"); // => false
    ```
+
