@@ -96,10 +96,10 @@ const people = [];
 
 // imagine if we want to fill the people's array with twenty objects, it would be a bit tedious to
 // create so many objects in this way to add to the array
-const person = { name: "John", age: 23 };
-const person1 = { name: "Jane", age: 26 };
+const personOne = { name: "John", age: 23 };
+const personTwo = { name: "Jane", age: 26 };
 
-people.push(person, person1);
+people.push(personOne, personTwo);
 people; // => [{name:"John", age:23}, {name:"Jane", age:26}]
 
 // so we could use a function to create the objects for us instead
@@ -107,9 +107,9 @@ const createPerson = function (name, age) {
   return { name: name, age: age };
 };
 
-person2 = createPerson("Mark", 19);
-person3 = createPerson("Marry", 20);
-people.push(person2, person3);
+personThree = createPerson("Mark", 19);
+personFour = createPerson("Marry", 20);
+people.push(personThree, personFour);
 ```
 
 ### Pulse Check
