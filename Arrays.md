@@ -31,17 +31,18 @@ const someArrayValues = [
   [1, 2, 3, 4],
   function () {
     console.log("Hello");
-  }
+  },
 ];
 
 // it is possible to use other variables inside the array
-const nameOne = "John";
-const nameTwo = "Doe";
+let nameOne = "John";
+let nameTwo = "Doe";
 const names = [nameOne, nameTwo];
 
 names; // => ["John", "Doe"]
 
 nameOne = "Jane";
+nameTwo = "Smith";
 
 names; // => ["John", "Doe"]
 ```
@@ -71,7 +72,7 @@ numbers[numbers.length - 1]; // => 45
 // accessing nested arrays
 const nestedArrays = [
   [1, 2, 3],
-  [4, 5, 6]
+  [4, 5, 6],
 ];
 
 nestedArrays[0]; // => [1,2,3]
@@ -165,17 +166,17 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 
 4. Solve the following questions while using array methods.
 
-  ```js
-  // 1- add an the value 'Dinosaur' to the end of the array using the correct array method
-  const reptiles = ["Snake", "Lizard", "Turtle"];
+   ```js
+   // 1- add an the value 'Dinosaur' to the end of the array using the correct array method
+   const reptiles = ["Snake", "Lizard", "Turtle"];
 
-  // 2- add an the value 'Goldfish' to the start of the array using the correct array method
-  const fish = ["Swordfish", "Clownfish", "Shark"];
+   // 2- add an the value 'Goldfish' to the start of the array using the correct array method
+   const fish = ["Swordfish", "Clownfish", "Shark"];
 
-  // 3- remove the first value of `reptiles`
+   // 3- remove the first value of `reptiles`
 
-  // 4- remove the last value of `fish`
-  ```
+   // 4- remove the last value of `fish`
+   ```
 
 ### Practice
 
@@ -185,7 +186,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    // split: is used to convert a string into an array and the values will be separated depending on the
    // argument passed into the split method
    const word = "Hello";
-   // if an empty string is passed as an argument then the string will be split on every constter
+   // if an empty string is passed as an argument then the string will be split on every letter
    word.split(""); // => ["H", "e", "l", "l", "o"]
    // if a string contains empty space then the string will be split on every empty space
    const words = "This is a string that contains words";
@@ -336,4 +337,3 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
    search(fruits, "banana"); // => true
    search(fruits, "John"); // => false
    ```
-
