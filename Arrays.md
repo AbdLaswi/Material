@@ -95,7 +95,7 @@ An example of array methods:
 
 ```js
 // the array's push method is used to add one or more elements  to the end of the array
-let numbers = [1, 2];
+const numbers = [1, 2];
 numbers.push(3);
 numbers; // => [1, 2, 3]
 numbers.push(4, 5);
