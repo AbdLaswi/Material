@@ -31,7 +31,7 @@ const someObjectValues = {
   number: 100,
   string: "Hello World",
   array: [1, 2],
-  boolean: true
+  boolean: true,
   object: { a: 1 },
   square: function (number) {
     return number * number;
