@@ -254,6 +254,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 4. Write a function `updateOrCreate` that accepts three arguments an `array`, `value`, `index` and returns an updated array, check the output for more information on the updated array
 
    ```js
+   // the array values are unique, no duplicate values in the array
    const updateOrCreate = function (array, value, index) {
      // TODO: Your code here
    };
@@ -266,7 +267,7 @@ numbers; // => [-1, 0, 1, 2, 3, 4]
 5. Read about `slice` and `indexOf` and answer the following
 
    ```js
-   //  Write a function `sliceArray` that accepts three arguments an ordered numeric `array`, `startVal`, `endVal`
+   //  Write a function `sliceArray` that accepts three arguments an ordered numeric `array` (unique numbers), `startVal`, `endVal`
    // and returns an array starting at the `startVal` and ending at `endVal`
 
    const sliceArray = function (array, startVal, endVal) {
