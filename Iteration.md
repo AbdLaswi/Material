@@ -278,8 +278,8 @@ while (index < 9) {
 
    compare(["one", "two", "three"], { 0: "one", 1: "two", 2: "three" }); // => true
    compare(["one", "two", "four"], { 0: "one", 1: "two", 2: "three" }); // => false
-   compare(["one", "two"], { 0: "one", 1: "two", 2: "three" }); // => true
-   compare(["one", "two", "three"], { 0: "one", 1: "two" }); // => false
+   compare(["one", "two"], { "foo": "one", "bar": "two", "baz": "three" }); // => true
+   compare(["one", "two", "three"], { "foo": "one", "bar": "two" }); // => false
    ```
 
 5. Write a function `deleteKeys` that accepts an array and an object and returns the same object after removing all key-value pairs depending on the values in the array, the array will contain the key names that must be removed from the object.
@@ -289,7 +289,7 @@ while (index < 9) {
      // TODO: Your code here
    };
 
-   deleteKeys(["one", "two"], { one: "one", two: "two", three: "three" }); // => { one: "one", two: "two", three: "three" }
+   deleteKeys(["one", "two"], { "one": "one", "two": "two", "three": "three" }); // => { three: "three" }
    deleteKeys(["four", "five", "one"], { 0: "one", 1: "two", 2: "three" }); // => { two: "two", three: "three" }
    ```
 
