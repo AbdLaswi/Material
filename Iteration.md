@@ -52,7 +52,7 @@ for (let i = 0; i < 5; i++) {
 // => 4
 
 // an example of defining a for loop with more than one variable
-for (let i = 0, j = 10; i != j; i++, j--) {
+for (let i = 0, j = 10; i !== j; i++, j--) {
   console.log(i, j);
 }
 // => 0 10
@@ -73,15 +73,15 @@ Here is an example:
 // write a function that takes an array of numbers and returns a new array with the positive numbers only
 const positiveOnly = function (numbers) {
   const result = [];
-  // for (let i = 0; i < numbers.length; i++) {
-  //   if (numbers[i] >= 0) {
-  //     result.push(numbers[i]);
-  //   }
-  // }
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+      result.push(numbers[i]);
+    }
+  }
 
   // let index = 0
   // while(index < numbers.length){
-  //     if (numbers[index] >= 0){
+  //     if (numbers[index] > 0){
   //         result.push(numbers[index]);
   //     }
   //     index ++
